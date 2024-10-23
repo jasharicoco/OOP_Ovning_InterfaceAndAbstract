@@ -68,7 +68,13 @@
             Console.WriteLine(sales.GenerateReport());
             Console.WriteLine(inventory.GenerateReport());
 
+            var filelogger = new FileLogger();
+            var databaselogger = new DatabaseLogger();
 
+            filelogger.LogInfo("ok");
+            filelogger.LogError("oki");
+            databaselogger.LogInfo("okidoki");
+            databaselogger.LogError("okiyabadoki");
 
         }
     }
