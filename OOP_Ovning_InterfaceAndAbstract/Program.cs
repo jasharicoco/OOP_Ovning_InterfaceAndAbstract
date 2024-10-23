@@ -62,6 +62,14 @@
             email.SendMessage("How You Doin'? Email only plz. Thx!");
             sms.SendMessage("This is a Text Message!");
 
+            var sales = new SalesReport();
+            var inventory = new InventoryReport();
+
+            Console.WriteLine(sales.GenerateReport());
+            Console.WriteLine(inventory.GenerateReport());
+
+
+
         }
     }
 }
